@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VC-R-01 · 订单与退货管理</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">VC</div>
+      <div class="brand-text">
+        <strong>VC-R-01</strong>
+        <span>订单与退货管理</span>
+      </div>
+    </div>
+
+    <nav id="nav">
+      <a href="#/overview" data-route="overview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        概览
+      </a>
+      <a href="#/invoice" data-route="invoice">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
+        发票查询
+      </a>
+      <a href="#/requests" data-route="requests">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M8 13h8M8 17h5"/></svg>
+        申请单
+      </a>
+      <a href="#/demo" data-route="demo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 5v14l11-7z"/></svg>
+        演示剧本
+      </a>
+      <a href="#/rules" data-route="rules">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4v5c0 4.4-3.2 8.3-8 9-4.8-.7-8-4.6-8-9V7z"/></svg>
+        规则说明
+      </a>
+      <a href="#/evidence" data-route="evidence">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        证据与自检
+      </a>
+    </nav>
+
+    <div class="sidebar-foot">
+      <div class="db-chip" id="db-chip">
+        <b>正在连接…</b>
+        <code>data/build/demo/demo.db</code>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb" id="crumb"></div>
+      <div class="topbar-right" id="topbar-right"></div>
+    </header>
+    <main id="view"></main>
+  </div>
+</div>
+
+<div id="toast"></div>
+<div id="modal-root"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

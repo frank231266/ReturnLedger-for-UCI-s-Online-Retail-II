@@ -1,0 +1,3 @@
+sheet,invoice,stock_code,description,quantity,invoice_date,price,cust_id,country,seq,line_key,is_cancel,is_bad_debt,is_non_product,returnable_qty
+Year 2009-2010,536365,85123A,SAME INVOICE FROM OLDER SHEET,6,2010-12-01 08:26:00,2.55,17850,United Kingdom,1,Year 2009-2010|536365|1,0,0,0,6
+Year 2010-2011,536365,85123A,SAME INVOICE FROM NEWER SHEET,6,2010-12-01 08:26:00,2.55,17850,United Kingdom,1,Year 2010-2011|536365|1,0,0,0,6

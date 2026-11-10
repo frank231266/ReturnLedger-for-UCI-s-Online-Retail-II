@@ -1,0 +1,16 @@
+# VC-R-01 运行依赖（最小集）
+#
+# 1) 系统本体（src/main.py 七条命令 + 本地网页界面 src/webui/）
+#    只用 Python 标准库，**不需要安装任何第三方包**，断网也能跑。
+#
+# 2) 只有「从原始 xlsx 重建 data/build/order_line.csv」这一步需要 openpyxl：
+#        python -m pip install -r requirements.txt
+#    离线机器：先在有网的机器上 `pip download openpyxl -d wheels`，
+#    再把 wheels 目录拷过去 `python -m pip install --no-index --find-links wheels openpyxl`。
+#
+# 3) 下面三行是可选的：只在重新生成《项目报告》《PPT 大纲》《答辩速查卡》时才要装，
+#    不装也完全不影响运行系统与跑测试。
+# python-docx>=1.1
+# python-pptx>=0.6
+
+openpyxl>=3.1
